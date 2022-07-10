@@ -5,6 +5,6 @@ clone for a well known application Spotify. In my current project only a few num
 Technology used : HTML, CSS, Javascript
 
 
-To run the clone, just open the file in any IDE and run it on live server.
+  To run the clone, just open the Repo in any IDE and run it on live server.
 
 Thank you
