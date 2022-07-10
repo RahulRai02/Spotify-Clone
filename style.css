@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body{
+    background-color:rgb(46, 46, 46);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Montserrat', sans-serif;   
+    position: sticky;
+    top: 0%;
+}
+
+nav ul{
+    /* Will align all items horzontally */
+    display: flex;
+    align-items: center;
+
+    /* Will hide the bullets */
+    list-style-type: none;    
+
+    /* Nav bar ki height and background-color hai */
+    height: 63px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    /* the home and about section heading are collapsing so to space them apart  */
+    /* give padding on top and bottom as 0px and on the left and right as 12px(any value which looks clean) */
+    padding: 0 12px;
+}
+
+
+.brand img{
+    /* Now how to set width accurately, go to dev tools and change width there */
+    width: 50px;
+    padding: 0 5px;
+}
+
+/* The spotify logo, home and about are centered but the spotify text is not. So let us make  */
+/* the class brand as a flex box */
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 66vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 11px;
+    padding: 28px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.bottom{
+    background-color: black;
+    /* To bring the scroll bar down */
+    position: sticky;
+    bottom: 0;
+
+    /* To center the seek bar Start */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* To center the seek bar End */
+    
+    height: 87px;
+
+    color: white;
+
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+    
+}
+
+.icons i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 80%; */
+    color:black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+
+.songItem img{
+    width: 44px;
+    margin: 0 23px;
+    border-radius: 40px;
+}
+
+.timestamp{
+    margin: 0 25px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 20px;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
